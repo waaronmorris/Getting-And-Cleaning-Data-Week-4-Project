@@ -58,4 +58,4 @@ all <- data.table(all)
 summary <- all[, lapply(.SD, mean), by = 'subject,activity']
 
 ## Write new file
-write.table(summary, file = "summary.txt", row.names = TRUE)
+write.table(summary, file = "summary.txt", row.names = FALSE)
